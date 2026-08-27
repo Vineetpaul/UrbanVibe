@@ -7,10 +7,13 @@ const DarkMode = () => {
     localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
   )
 
-  const element = document.documentElement
+ 
 
   useEffect(() => {
-    if (theme == 'dark') {
+
+     const element = document.documentElement
+
+    if (theme === 'dark') {
       element.classList.add('dark')
       element.classList.remove('light')
       localStorage.setItem('theme', 'dark')
@@ -22,14 +25,14 @@ const DarkMode = () => {
   }, [theme])
 
   return (
-    <div className="relative h-12 w-12">
+    <div className="relative h-12 w-12 ">
       <img
         src={LightImage}
         alt="Light Mode"
         onClick={() => {
           setTheme(theme == 'light' ? 'dark' : 'light')
         }}
-        className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)]
+        className={`w-12 cursor-pointer hover:scale-105 duration-200 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)]
             transition-all duration-300 absolute right-0 z-10 ${theme == 'dark' ? 'opacity-0' : 'opacity-100'}`}
       />
 
@@ -39,7 +42,7 @@ const DarkMode = () => {
         onClick={() => {
           setTheme(theme == 'light' ? 'dark' : 'light')
         }}
-        className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0 ${theme == 'dark' ? 'opacity-100' : 'opacity-0'}`}
+        className={`w-12 cursor-pointer hover:scale-105 duration-200 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute right-0 ${theme == 'dark' ? 'opacity-100' : 'opacity-0'}`}
       />
     </div>
   )

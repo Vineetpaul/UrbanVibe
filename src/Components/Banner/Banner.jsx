@@ -32,12 +32,12 @@ const Banner = () => {
               <div data-aos="fade-up">
                 <div
                   className="flex items-center gap-4 cursor-pointer
-                                hover:bg-violet-50 dark:hover:bg-violet-100 rounded-xl
+                                hover:bg-violet-50 dark:hover:bg-violet-300 rounded-xl
                                 !duration-200 !transition-colors py-2 px-2"
                 >
                   <GrSecure
                     className="h-12 w-12 rounded-full text-4xl
-                                    bg-violet-100 dark:violet-400 shadow-sm p-4"
+                                    bg-violet-100 dark:bg-violet-400 shadow-sm p-4"
                   />
                   <p>Quality Product</p>
                 </div>
@@ -45,12 +45,12 @@ const Banner = () => {
               <div data-aos="fade-up">
                 <div
                   className="flex items-center gap-4 cursor-pointer
-                                hover:bg-blue-50 dark:hover:bg-blue-100 rounded-xl 
+                                hover:bg-blue-50 dark:hover:bg-blue-300 rounded-xl 
                                 !duration-200 !transition-colors py-2 px-2"
                 >
                   <IoFastFood
                     className="h-12 w-12 rounded-full text-4xl
-                                    bg-blue-100 dark:blue-400 shadow-sm p-4"
+                                    bg-blue-100 dark:bg-blue-400 shadow-sm p-4"
                   />
                   <p>Fast Delivery</p>
                 </div>
@@ -58,12 +58,12 @@ const Banner = () => {
               <div data-aos="fade-up">
                 <div
                   className="flex items-center gap-4 cursor-pointer
-                                hover:bg-orange-50 dark:hover:bg-orange-100 rounded-xl
+                                hover:bg-orange-50 dark:hover:bg-orange-300 rounded-xl
                                 !duration-200 !transition-colors py-2 px-2"
                 >
                   <GiFoodTruck
                     className="h-12 w-12 rounded-full text-4xl
-                                    bg-orange-100 dark:orange-400 shadow-sm p-4"
+                                    bg-orange-100 dark:bg-orange-400 shadow-sm p-4"
                   />
                   <p>Easy Payment Method</p>
                 </div>
@@ -72,12 +72,12 @@ const Banner = () => {
               <div data-aos="fade-up">
                 <div
                   className="flex items-center gap-4 cursor-pointer
-                                hover:bg-green-50 dark:hover:bg-green-100 rounded-xl
+                                hover:bg-green-50 dark:hover:bg-green-300 rounded-xl
                                 !duration-200 !transition-colors py-2 px-2"
                 >
                   <GiFoodTruck
                     className="h-12 w-12 rounded-full text-4xl
-                                    bg-green-100 dark:green-400 shadow-sm p-4"
+                                    bg-green-100 dark:bg-green-400 shadow-sm p-4"
                   />
                   <p>Get Offer</p>
                 </div>

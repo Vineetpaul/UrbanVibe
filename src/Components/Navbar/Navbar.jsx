@@ -65,11 +65,11 @@ const Navbar = ({ handleOrderPopup }) => {
                   placeholder="Search here"
                   className="w-[200px] sm:w-[200px]
                     group-hover:w-[300px] transition-all duration-300
-                    rounded-lg border border-gray-300 py-1 px-2
+                    rounded-lg border border-gray-400 py-1 px-2
                     text-sm focus:outline-none
                     focus:border-1
                     focus:border-primary
-                    dark:border-gray-800 dark:bg-slate-800 dark:text-white"
+                    dark:border-gray-600 dark:bg-slate-800 dark:text-white"
                 />
                 <IoMdSearch
                   className="text-slate-800 group-hover:text-primary
@@ -79,12 +79,12 @@ const Navbar = ({ handleOrderPopup }) => {
               <button
                 onClick={handleOrderPopup}
                 className="bg-gradient-to-r from-primary to-secondary transition-shadow duration-200
-                text-white py-1 px-4 rounded-full flex w-28 items-center justify-center gap-3 group hover:shadow-md"
+                text-white py-1 px-4 rounded-full flex w-15 items-center justify-center gap-3 group hover:scale-105 duration-200 hover:shadow-lg dark:hover:drop-shadow-blue-900 "
               >
-                <span className="w-10 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                {/* <span className="w-10 opacity-0 transition-opacity duration-200 ">
                   Order
-                </span>
-                <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
+                </span> */}
+                <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer hover:shadow-lg" />
               </button>
 
               {/* dark mode */}
