@@ -2,11 +2,10 @@ import React from 'react'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import AOS from 'aos'
-import "aos/dist/aos.css"
+import 'aos/dist/aos.css'
 import { useState, useEffect } from 'react'
 
 const App = () => {
-
   // setting useState for Popups
 
   const [orderPopups, setOrderPopup] = useState(false)
@@ -21,21 +20,22 @@ const App = () => {
     AOS.init({
       offset: 100,
       duration: 800,
-      easing: "ease-in-sine",
+      easing: 'ease-in-sine',
       delay: 100,
     })
-    AOS.refresh();
+    AOS.refresh()
   }, [])
-
 
   return (
     <>
-    <div>
-      <h1 className="bg-white dark:bg-gray-900 
-    dark:text-white duration:200"></h1>
-    <Navbar handleOrderPopup={handleOrderPopup}/>
-    <Banner />
-    </div>
+      <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
+        <h1
+          className="bg-white dark:bg-gray-900
+    dark:text-white duration:200"
+        ></h1>
+        <Navbar handleOrderPopup={handleOrderPopup} />
+        <Banner />
+      </div>
     </>
   )
 }
