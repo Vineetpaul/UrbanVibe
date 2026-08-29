@@ -3,6 +3,11 @@ import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Products from './Components/Products/Products'
+import TopProducts from './Components/TopProducts/TopProducts'
+import Subscribe from './Components/Subscribe/Subscribe'
+import Testimonials from './Components/Testimonials/Testimonials'
+import Footer from './Components/Footer/Footer'
+import Popup from './Components/Popup/Popup'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useState, useEffect } from 'react'
@@ -37,8 +42,13 @@ const App = () => {
         ></h1>
         <Navbar handleOrderPopup={handleOrderPopup} />
         <Hero handleOrderPopup={handleOrderPopup} />
-        <Products />
+        <Products/>
+        <TopProducts handleOrderPopup={handleOrderPopup}/>
         <Banner />
+        <Subscribe />
+        <Testimonials />
+        <Footer />
+        <Popup orderPopup={orderPopups} setOrderPopup={setOrderPopup} />
       </div>
     </>
   )

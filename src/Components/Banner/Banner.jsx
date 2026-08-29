@@ -24,8 +24,8 @@ const Banner = () => {
               data-aos="fade-up"
               className="text-sm tracking-wide text-gray-500 leading-5 dark:text-gray-300"
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-              inventore voluptas dolores eos doloribus
+              Refresh your wardrobe with smart essentials, premium fabrics, and
+              seasonal pieces that keep you comfortable and effortlessly styled.
             </p>
 
             <div className="flex flex-col gap-4">
